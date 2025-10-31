@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* Smooth scrolling when clicking nav links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION LINKS */
+.nav-link {
+  color: #d1d5db; /* gray-300 */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #34d399; /* green-400 */
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #34d399;
+}
+
+.section-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #10b981;
+  margin: 0.75rem auto 2rem auto;
+  border-radius: 9999px;
+}
+
+/* CARDS */
+.skill-card,
+.project-card {
+  background-color: #1f2937; /* gray-800 */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #374151;
+}
+
+.skill-card:hover,
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+/* LINKS */
+.project-link,
+.social-link {
+  color: #34d399;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-link:hover,
+.social-link:hover {
+  color: #6ee7b7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+}
