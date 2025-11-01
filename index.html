@@ -3,26 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio | About Me</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Nitin Kumar | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
- <section class="about-section">
-  <div class="profile-photo">
-    <img src="Img/nitin.avif" alt="Nitin Kumar">
-  </div>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <h1>Hello, I'm Nitin Kumar</h1>
-  <h3>MCA (Hons.) in AI & ML</h3>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="profile-photo">
+      <img src="Img/nitin.avif" alt="Nitin Kumar">
+    </div>
+    <h1>Hello, I'm Nitin Kumar</h1>
+    <h3>MCA (Hons.) in AI & ML</h3>
+    <p>
+      A determined learner bridging science and technology. Coming from a small rural background,
+      I’ve worked hard to reach the cutting edge of innovation. After completing my BSc in Non-Medical,
+      I’m now pursuing my MCA (Hons.) with a specialization in AI and ML at LPU.
+      I’m passionate about exploring high-impact fields like Data Science, AI in Robotics, and AI in Healthcare.
+    </p>
+  </section>
 
-  <p>
-    A determined learner bridging science and technology. Coming from a small rural background, 
-    I’ve worked hard to reach the cutting edge of innovation. After completing my BSc in Non-Medical, 
-    I’m now pursuing my MCA (Hons.) with a specialization in AI and ML at LPU. 
-    I’m passionate about exploring high-impact fields like Data Science, AI in Robotics, and AI in Healthcare.
-  </p>
-</section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">Data Visualization</div>
+      <div class="skill-card">HTML & CSS</div>
+      <div class="skill-card">Team Leadership</div>
+    </div>
+  </section>
 
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <h3>MCA (Hons.) in AI & ML</h3>
+      <p>Lovely Professional University (2025–2027)</p>
+    </div>
+    <div class="edu-card">
+      <h3>BSc in Non-Medical (PCM)</h3>
+      <p>Graduated with CGPA: 7.0</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>AI Chatbot</h3>
+        <p>Built an intelligent chatbot for college information using Python and NLP.</p>
+      </div>
+      <div class="project-card">
+        <h3>Data Visualization Dashboard</h3>
+        <p>Created a data dashboard for analyzing student performance using Python & Plotly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications-section">
+    <h2>Certifications</h2>
+    <ul>
+      <li>DCA (Diploma in Computer Applications)</li>
+      <li>Hackathon Participation – LPU (2025)</li>
+      <li>AI for Everyone – Coursera</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:nitinkumar@example.com">nitinkumar@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/nitinkumar</a></p>
+    </div>
+
+    <form class="message-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <script src="script.js"></script>
 </body>
