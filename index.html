@@ -1,106 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nitin Kumar | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- ===== Navbar ===== -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="profile-photo">
-      <img src="Img/nitin.avif" alt="Nitin Kumar">
-    </div>
-    <h1>Hello, I'm Nitin Kumar</h1>
-    <h3>MCA (Hons.) in AI & ML</h3>
-    <p>
-      A determined learner bridging science and technology. Coming from a small rural background,
-      I’ve worked hard to reach the cutting edge of innovation. After completing my BSc in Non-Medical,
-      I’m now pursuing my MCA (Hons.) with a specialization in AI and ML at LPU.
-      I’m passionate about exploring high-impact fields like Data Science, AI in Robotics, and AI in Healthcare.
-    </p>
-  </section>
+    <!-- ===== About Section ===== -->
+    <section id="about">
+        <div class="container">
+            <img src="Img/nitin.avif" alt="Nitin Kumar" class="profile-img">
+            <h1>Hello, I'm Nitin Kumar</h1>
+            <h3>MCA (Hons.) in AI & ML</h3>
+            <p>
+                A determined learner bridging science and technology. Coming from a small rural background, 
+                I’ve worked hard to reach the cutting edge of innovation. After completing my BSc in Non-Medical, 
+                I’m now pursuing my MCA (Hons.) with a specialization in AI and ML at LPU. I’m passionate about exploring 
+                high-impact fields like Data Science, AI in Robotics, and AI in Healthcare.
+            </p>
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">Python</div>
-      <div class="skill-card">SQL</div>
-      <div class="skill-card">Machine Learning</div>
-      <div class="skill-card">Data Visualization</div>
-      <div class="skill-card">HTML & CSS</div>
-      <div class="skill-card">Team Leadership</div>
-    </div>
-  </section>
+    <!-- ===== Skills Section ===== -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Machine Learning</li>
+                <li>Data Analysis</li>
+                <li>HTML, CSS, JavaScript (Basics)</li>
+                <li>Communication & Teaching</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- Education Section -->
-  <section id="education" class="education-section">
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>MCA (Hons.) in AI & ML</h3>
-      <p>Lovely Professional University (2025–2027)</p>
-    </div>
-    <div class="edu-card">
-      <h3>BSc in Non-Medical (PCM)</h3>
-      <p>Graduated with CGPA: 7.0</p>
-    </div>
-  </section>
+    <!-- ===== Education Section ===== -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <h3>Master of Computer Applications (Hons.) in AI & ML</h3>
+                <p>Lovely Professional University, Phagwara | 2025–2027</p>
+            </div>
+            <div class="edu-item">
+                <h3>Bachelor of Science (Non-Medical)</h3>
+                <p>Graduated with a CGPA of 7.0 | 2022–2025</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>AI Chatbot</h3>
-        <p>Built an intelligent chatbot for college information using Python and NLP.</p>
-      </div>
-      <div class="project-card">
-        <h3>Data Visualization Dashboard</h3>
-        <p>Created a data dashboard for analyzing student performance using Python & Plotly.</p>
-      </div>
-    </div>
-  </section>
+    <!-- ===== Projects Section ===== -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>AI Chatbot Assistant (Ongoing)</h3>
+                <p>
+                    Developing a chatbot using Python and NLP for personalized academic help and productivity management.
+                </p>
+            </div>
+            <div class="project-item">
+                <h3>Data Analysis on Student Performance</h3>
+                <p>
+                    Used Python and Excel to analyze performance trends and visualize academic data insights.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="certifications-section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>DCA (Diploma in Computer Applications)</li>
-      <li>Hackathon Participation – LPU (2025)</li>
-      <li>AI for Everyone – Coursera</li>
-    </ul>
-  </section>
+    <!-- ===== Certifications Section ===== -->
+    <section id="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Python for Beginners – Coursera</li>
+                <li>Machine Learning Foundations – Google</li>
+                <li>Data Analysis with Python – IBM SkillsBuild</li>
+            </ul>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:nitinkumar@example.com">nitinkumar@example.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com" target="_blank">linkedin.com/in/nitinkumar</a></p>
-    </div>
+    <!-- ===== Contact Section ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach me via email or message me directly below.</p>
+            <p><strong>Email:</strong> nitinkumar@gmail.com</p>
 
-    <form class="message-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message..." required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- ===== Footer ===== -->
+    <footer>
+        <p>© 2025 Nitin Kumar | All Rights Reserved</p>
+    </footer>
 </body>
+<script src="script.js"></script>
+
 </html>
