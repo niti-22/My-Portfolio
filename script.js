@@ -1,33 +1,14 @@
-// ===== Scroll Animation =====
-const sections = document.querySelectorAll('.section');
+// When button or image is clicked, open your LinkedIn (or any origin link)
+document.addEventListener("DOMContentLoaded", () => {
+  const originBtn = document.getElementById("viewOrigin");
+  const aboutSection = document.getElementById("about");
+  const profileImg = document.getElementById("profileImage");
+  const originLink = aboutSection.getAttribute("data-origin");
 
-window.addEventListener('scroll', () => {
-  const triggerBottom = window.innerHeight * 0.85;
-
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-
-    if (sectionTop < triggerBottom) {
-      section.classList.add('active');
-    }
-  });
-});
-
-// ===== Message Form (Demo Only) =====
-function sendMessage(event) {
-  event.preventDefault();
-
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-  const status = document.getElementById('status');
-
-  if (name && email && message) {
-    status.style.color = "#38bdf8";
-    status.textContent = "✅ Message sent successfully! (Demo only)";
-    event.target.reset();
-  } else {
-    status.style.color = "red";
-    status.textContent = "❌ Please fill all fields correctly.";
+  function openOrigin() {
+    if (originLink) window.open(originLink, "_blank");
   }
-}
+
+  originBtn.addEventListener("click", openOrigin);
+  profileImg.addEventListener("click", openOrigin);
+});
