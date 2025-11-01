@@ -1,14 +1,4 @@
-// When button or image is clicked, open your LinkedIn (or any origin link)
-document.addEventListener("DOMContentLoaded", () => {
-  const originBtn = document.getElementById("viewOrigin");
-  const aboutSection = document.getElementById("about");
-  const profileImg = document.getElementById("profileImage");
-  const originLink = aboutSection.getAttribute("data-origin");
+// This file will be used later for animations or actions in next sections
+// For now, it's empty so your About Me stays static and simple
 
-  function openOrigin() {
-    if (originLink) window.open(originLink, "_blank");
-  }
-
-  originBtn.addEventListener("click", openOrigin);
-  profileImg.addEventListener("click", openOrigin);
-});
+console.log("About Me section loaded successfully!");
